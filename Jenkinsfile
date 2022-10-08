@@ -9,7 +9,7 @@ pipeline {
         stage('Build image') {
             steps {
                 script {
-                    docker = docker.build("flaskapp:latest", '-f Dockerfile .')
+                    dockerapp = docker.build("flaskapp:latest", '-f Dockerfile .')
                 }
             }
         }
