@@ -23,6 +23,14 @@ pipeline {
                 }
             }
         }
+        
+        stage('Run image') {
+            steps {
+                dir('app') {
+                    sh 'python3 main.py' 
+                }
+            }
+        }
            
     }
 }
