@@ -11,7 +11,7 @@ from collections import OrderedDict
 
 app = Flask(__name__)
 
-with open("app/users.json", "r") as f:
+with open("users.json", "r") as f:
     users = json.load(f)
 
 
