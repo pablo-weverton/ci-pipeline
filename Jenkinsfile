@@ -18,8 +18,8 @@ pipeline {
         
        stage('Test') {
             steps {
-                dir('app/tests') {
-                    sh 'python3 -m pytest'
+                dir('app') {
+                    sh 'pytest tests/ -v' 
                 }
             }
         }
