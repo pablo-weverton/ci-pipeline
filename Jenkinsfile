@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout git') {
             steps {
-                checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: '2eec7b60-71c2-4ecc-a0c8-42612e8287da', url: 'https://github.com/pablo-weverton/ci-pipeline.git']]])
+                checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: '691db04d-0236-484b-ab3d-32070af3ce9f', url: 'https://github.com/pablo-weverton/ci-pipeline.git']]])
             }
         }
         stage('Build image') {
