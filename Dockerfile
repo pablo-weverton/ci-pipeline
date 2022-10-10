@@ -5,4 +5,6 @@ RUN apk add py3-pip
 
 COPY . .
 
+RUN pwd
+
 RUN pip3 --no-cache-dir install -r requirements.txt
